@@ -1,0 +1,50 @@
+header{
+    padding: 100px 25px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.head_text {
+    width: 850px;
+}
+.picture_circle{
+    height: 600px;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 20px solid var(--main-brand-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    margin-bottom: 120px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+nav a:hover{
+    color: var(--text-color)
+}
+nav a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
