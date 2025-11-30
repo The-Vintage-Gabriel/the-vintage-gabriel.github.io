@@ -5,16 +5,16 @@ header{
     justify-items: center;
     flex-wrap: wrap;
 }
+
 .head_text {
     width: 850px;
 }
+
 .picture_circle{
     height: 600px;
     width: 600px;
-
-    max-height: 80vw;
-    max-width: 80vw;
-
+    max-height: 90vw;
+    max-width: 90vw;
     overflow: hidden;
     border-radius: 50%;
     border: 20px solid var(--main-brand-color);
@@ -23,23 +23,28 @@ header{
     justify-content: center;
     align-items: center;
 }
+
 nav{
     margin-bottom: 120px;
 }
+
 nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
+
 nav a{
     color: var(--secondary-text-color);
     text-decoration: none;
     position: relative;
     padding: 3px;
 }
+
 nav a:hover{
     color: var(--text-color)
 }
+
 nav a::after{
     content: '';
     height: 2px;
@@ -50,12 +55,15 @@ nav a::after{
     left: 0;
     transition: 150ms ease-in-out;
 }
+
 nav a:hover::after{
     width: 100%;
 }
+
 @media(max-width: 800px){
     nav ul {
         display: none;
+        flex-direction: column;
     }
     #toggle_button:checked ~ ul {
         display: flex;
