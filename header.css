@@ -3,6 +3,7 @@ header{
     display: flex;
     justify-content: center;
     justify-items: center;
+    flex-wrap: wrap;
 }
 .head_text {
     width: 850px;
@@ -10,6 +11,10 @@ header{
 .picture_circle{
     height: 600px;
     width: 600px;
+
+    max-height: 80vw;
+    max-width: 80vw;
+
     overflow: hidden;
     border-radius: 50%;
     border: 20px solid var(--main-brand-color);
@@ -47,4 +52,13 @@ nav a::after{
 }
 nav a:hover::after{
     width: 100%;
+}
+@media(max-width: 800px){
+    nav ul {
+        display: none;
+    }
+    #toggle_button:checked ~ ul {
+        display: flex;
+
+    }
 }
