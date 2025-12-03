@@ -35,7 +35,8 @@ h2{
 
 .subheading{
     margin-top: 35px;
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
+    font-size: 25px;
 }
 
 #toggle_button{
@@ -45,7 +46,7 @@ h2{
 
 @media (max-width: 800px) {
     h1{
-        font-size: 12vw;
+        font-size: 13vw;
         text-align: center;
     }
     h2{
@@ -54,5 +55,6 @@ h2{
     }
     .subheading{
         text-align: center;
+        font-size: 4vw;
     }
 }
